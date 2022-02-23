@@ -17,10 +17,7 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
+
         private void InitializeComponent()
         {
             this.txtResultado = new System.Windows.Forms.TextBox();
@@ -43,7 +40,6 @@
             this.botonNum4 = new System.Windows.Forms.Button();
             this.botonNum7 = new System.Windows.Forms.Button();
             this.btnMemoryPlus = new System.Windows.Forms.Button();
-            this.botonNum0 = new System.Windows.Forms.Button();
             this.btnMOD = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClearError = new System.Windows.Forms.Button();
@@ -93,6 +89,7 @@
             this.botonIgual.TabIndex = 74;
             this.botonIgual.Text = "=";
             this.botonIgual.UseVisualStyleBackColor = false;
+            this.botonIgual.Click += new System.EventHandler(this.botonIgual_Click);
             // 
             // botonNum3
             // 
@@ -108,6 +105,7 @@
             this.botonNum3.TabIndex = 73;
             this.botonNum3.Text = "3";
             this.botonNum3.UseVisualStyleBackColor = false;
+            this.botonNum3.Click += new System.EventHandler(this.botonNum3_Click);
             // 
             // botonNum6
             // 
@@ -123,6 +121,7 @@
             this.botonNum6.TabIndex = 72;
             this.botonNum6.Text = "6";
             this.botonNum6.UseVisualStyleBackColor = false;
+            this.botonNum6.Click += new System.EventHandler(this.botonNum6_Click);
             // 
             // botonNum9
             // 
@@ -154,6 +153,7 @@
             this.btnMemoryRecall.TabIndex = 70;
             this.btnMemoryRecall.Text = "MR";
             this.btnMemoryRecall.UseVisualStyleBackColor = false;
+            this.btnMemoryRecall.Click += new System.EventHandler(this.btnMemoryRecall_Click);
             // 
             // botonSuma
             // 
@@ -169,6 +169,7 @@
             this.botonSuma.TabIndex = 69;
             this.botonSuma.Text = "+";
             this.botonSuma.UseVisualStyleBackColor = false;
+            this.botonSuma.Click += new System.EventHandler(this.botonSuma_Click);
             // 
             // botonDivision
             // 
@@ -184,6 +185,7 @@
             this.botonDivision.TabIndex = 68;
             this.botonDivision.Text = "/";
             this.botonDivision.UseVisualStyleBackColor = false;
+            this.botonDivision.Click += new System.EventHandler(this.botonDivision_Click);
             // 
             // btnProduct
             // 
@@ -199,6 +201,7 @@
             this.btnProduct.TabIndex = 67;
             this.btnProduct.Text = "*";
             this.btnProduct.UseVisualStyleBackColor = false;
+            this.btnProduct.Click += new System.EventHandler(this.btnMultiplicion_Click);
             // 
             // btnMemoryClear
             // 
@@ -214,6 +217,7 @@
             this.btnMemoryClear.TabIndex = 66;
             this.btnMemoryClear.Text = "MC";
             this.btnMemoryClear.UseVisualStyleBackColor = false;
+            this.btnMemoryClear.Click += new System.EventHandler(this.btnMemoryClear_Click);
             // 
             // botonResta
             // 
@@ -229,6 +233,7 @@
             this.botonResta.TabIndex = 65;
             this.botonResta.Text = "-";
             this.botonResta.UseVisualStyleBackColor = false;
+            this.botonResta.Click += new System.EventHandler(this.botonResta_Click);
             // 
             // botonNum2
             // 
@@ -244,6 +249,7 @@
             this.botonNum2.TabIndex = 64;
             this.botonNum2.Text = "2";
             this.botonNum2.UseVisualStyleBackColor = false;
+            this.botonNum2.Click += new System.EventHandler(this.botonNum2_Click);
             // 
             // botonNum5
             // 
@@ -275,6 +281,7 @@
             this.botonNum8.TabIndex = 62;
             this.botonNum8.Text = "8";
             this.botonNum8.UseVisualStyleBackColor = false;
+            this.botonNum8.Click += new System.EventHandler(this.botonNum8_Click);
             // 
             // btnMemoryStorage
             // 
@@ -290,6 +297,7 @@
             this.btnMemoryStorage.TabIndex = 61;
             this.btnMemoryStorage.Text = "MS";
             this.btnMemoryStorage.UseVisualStyleBackColor = false;
+            this.btnMemoryStorage.Click += new System.EventHandler(this.btnMemoryStorage_Click);
             // 
             // botonNum1
             // 
@@ -305,6 +313,7 @@
             this.botonNum1.TabIndex = 60;
             this.botonNum1.Text = "1";
             this.botonNum1.UseVisualStyleBackColor = false;
+            this.botonNum1.Click += new System.EventHandler(this.botonNum1_Click);
             // 
             // botonNum4
             // 
@@ -320,6 +329,7 @@
             this.botonNum4.TabIndex = 59;
             this.botonNum4.Text = "4";
             this.botonNum4.UseVisualStyleBackColor = false;
+            this.botonNum4.Click += new System.EventHandler(this.botonNum4_Click);
             // 
             // botonNum7
             // 
@@ -335,6 +345,7 @@
             this.botonNum7.TabIndex = 58;
             this.botonNum7.Text = "7";
             this.botonNum7.UseVisualStyleBackColor = false;
+            this.botonNum7.Click += new System.EventHandler(this.botonNum7_Click);
             // 
             // btnMemoryPlus
             // 
@@ -350,13 +361,7 @@
             this.btnMemoryPlus.TabIndex = 57;
             this.btnMemoryPlus.Text = "M+";
             this.btnMemoryPlus.UseVisualStyleBackColor = false;
-            // 
-            // botonNum0
-            // 
-            this.botonNum0.Location = new System.Drawing.Point(0, 0);
-            this.botonNum0.Name = "botonNum0";
-            this.botonNum0.Size = new System.Drawing.Size(75, 23);
-            this.botonNum0.TabIndex = 77;
+            this.btnMemoryPlus.Click += new System.EventHandler(this.btnMemoryPlus_Click);
             // 
             // btnMOD
             // 
@@ -372,6 +377,7 @@
             this.btnMOD.TabIndex = 55;
             this.btnMOD.Text = "MOD";
             this.btnMOD.UseVisualStyleBackColor = false;
+            this.btnMOD.Click += new System.EventHandler(this.btnMOD_Click);
             // 
             // btnClear
             // 
@@ -387,6 +393,7 @@
             this.btnClear.TabIndex = 54;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClearError
             // 
@@ -402,6 +409,7 @@
             this.btnClearError.TabIndex = 53;
             this.btnClearError.Text = "CE";
             this.btnClearError.UseVisualStyleBackColor = false;
+            this.btnClearError.Click += new System.EventHandler(this.btnClearError_Click);
             // 
             // btnMemoryMinus
             // 
@@ -417,6 +425,7 @@
             this.btnMemoryMinus.TabIndex = 52;
             this.btnMemoryMinus.Text = "M-";
             this.btnMemoryMinus.UseVisualStyleBackColor = false;
+            this.btnMemoryMinus.Click += new System.EventHandler(this.btnMemoryMinus_Click);
             // 
             // btnNum9
             // 
@@ -432,6 +441,7 @@
             this.btnNum9.TabIndex = 78;
             this.btnNum9.Text = "9";
             this.btnNum9.UseVisualStyleBackColor = false;
+            this.btnNum9.Click += new System.EventHandler(this.btnNum9_Click);
             // 
             // Calculadora
             // 
@@ -459,13 +469,13 @@
             this.Controls.Add(this.botonNum4);
             this.Controls.Add(this.botonNum7);
             this.Controls.Add(this.btnMemoryPlus);
-            this.Controls.Add(this.botonNum0);
             this.Controls.Add(this.btnMOD);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnClearError);
             this.Controls.Add(this.btnMemoryMinus);
             this.Name = "Calculadora";
-            this.Text = "Form1";
+            this.Text = "Calculadora-Natalin Viquez";
+            this.Load += new System.EventHandler(this.Calculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,8 +510,6 @@
         private System.Windows.Forms.Button btnMemoryMinus;
 
 
-
-        private System.Windows.Forms.Button botonNum0;
         private System.Windows.Forms.Button botonNum1;
         private System.Windows.Forms.Button botonNum2;
         private System.Windows.Forms.Button botonNum3;

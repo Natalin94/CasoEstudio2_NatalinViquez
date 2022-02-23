@@ -10,10 +10,10 @@ namespace CasoEstudio_NatalinViquez
         public class Valores
         {
 
-            public double numeroUno { get; set; }
-            public double numeroDos { get; set; }
+            public double primerValor { get; set; }
+            public double segundoValor { get; set; }
             public double resultado { get; set; }
-            public double mem { get; set; }
+            public double memoria { get; set; }
 
             
         }

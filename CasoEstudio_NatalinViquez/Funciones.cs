@@ -8,47 +8,47 @@ namespace CasoEstudio_NatalinViquez
     public class Funciones
     {
 
-        public Valores val = new Valores();
+        public Valores valores = new Valores();
 
         public void BorrarMemoria()
         {
-            this.val.mem = 0;
+            this.valores.memoria = 0;
         }
 
         public double RecuperarMemoria()
         {
-            return this.val.mem;
+            return this.valores.memoria;
         }
 
         public void almacenamientoEnMemoria(double pMemoryNumber)
         {
-            this.val.mem = pMemoryNumber;
+            this.valores.memoria = pMemoryNumber;
         }
 
         public void Sumar(double number)
         {
-            this.val.mem += number;
+            this.valores.memoria += number;
         }
 
         public void Restar(double number)
         {
-            this.val.mem -= number;
+            this.valores.memoria -= number;
         }
 
         public void Limpiar()
         {
-            val = new Valores();
+            valores = new Valores();
         }
 
         public void LimpiarNumeros()
         {
-            this.val.numeroUno = 0.0;
-            this.val.numeroDos = 0.0;
+            this.valores.primerValor = 0.0;
+            this.valores.segundoValor = 0.0;
         }
 
         public int mod()
         {
-            int quo = (int)((int)this.val.numeroUno / (int)this.val.numeroDos);
+            int quo = (int)((int)this.valores.primerValor / (int)this.valores.segundoValor);
             this.LimpiarNumeros();
             return quo;
         }
@@ -60,18 +60,18 @@ namespace CasoEstudio_NatalinViquez
                 switch (TipoOperacion)
                 {
                     case "+":
-                        this.val.resultado = this.val.numeroUno + this.val.numeroDos;
+                        this.valores.resultado = this.valores.primerValor + this.valores.segundoValor;
                         break;
 
                     case "-":
-                        this.val.resultado = this.val.numeroUno - this.val.numeroDos;
+                        this.valores.resultado = this.valores.primerValor - this.valores.segundoValor;
                         break;
                     case "/":
-                        this.val.resultado = this.val.numeroUno / this.val.numeroDos;
+                        this.valores.resultado = this.valores.primerValor / this.valores.segundoValor;
                         break;
 
                     case "*":
-                        this.val.resultado = this.val.numeroUno * this.val.numeroDos;
+                        this.valores.resultado = this.valores.primerValor * this.valores.segundoValor;
                         break;
 
                     default:
@@ -81,7 +81,7 @@ namespace CasoEstudio_NatalinViquez
 
                 this.LimpiarNumeros();
 
-                return this.val.resultado.ToString();
+                return this.valores.resultado.ToString();
 
 
             }
